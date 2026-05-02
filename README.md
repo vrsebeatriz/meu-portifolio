@@ -4,7 +4,7 @@ Um portfólio minimalista, moderno e de alta performance, desenvolvido para dest
 
 ![Portfolio Preview](public/logo.png)
 
-## 🚀 Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 Este projeto foi construído com o que há de mais moderno no ecossistema Web:
 
@@ -15,21 +15,21 @@ Este projeto foi construído com o que há de mais moderno no ecossistema Web:
 - **Ícones**: [Lucide React](https://lucide.dev/)
 - **Deploy**: [Vercel](https://vercel.com/)
 
-## 🎨 Design & Conceito
+## Design & Conceito
 
 O design segue uma estética **Charcoal & Red-Orange**, focada em legibilidade e profissionalismo. 
 - **Minimalismo**: Informação direta e sem distrações.
 - **Micro-interações**: Feedback visual suave em botões e navegação.
 - **Responsividade**: Experiência otimizada para Desktop, Tablets e Mobile.
 
-## 📁 Estrutura do Projeto
+## Estrutura do Projeto
 
 - `/portfolio`: Galeria de projetos práticos com filtros e detalhes técnicos.
 - `/resume`: Currículo profissional focado em competências e experiência acadêmica.
 - `/shelf`: Estante de artigos técnicos aprofundados sobre Engenharia de Software e Segurança.
 - `/public`: Ativos estáticos e identidade visual (Logo customizada).
 
-## 🛠️ Como Executar Localmente
+## Como Executar Localmente
 
 1. Clone o repositório:
    ```bash
@@ -48,7 +48,7 @@ O design segue uma estética **Charcoal & Red-Orange**, focada em legibilidade e
 
 4. Acesse `http://localhost:3000` no seu navegador.
 
-## 📝 Licença
+## Licença
 
 Este projeto está sob a licença MIT. Sinta-se à vontade para usar como inspiração!
 
