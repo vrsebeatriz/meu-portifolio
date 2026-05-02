@@ -148,8 +148,9 @@ export default function Article({ params }: { params: { slug: string } }) {
               <p className="font-display font-black text-xl uppercase tracking-tighter">Gostou da leitura?</p>
               <p className="text-beige/60 text-sm">Acompanhe meu trabalho no GitHub ou conecte-se comigo no LinkedIn para trocarmos uma ideia sobre tecnologia.</p>
               <div className="flex gap-4 pt-2 justify-center md:justify-start">
-                <Link href="https://github.com/vrsebeatriz" className="text-prime font-bold text-xs uppercase tracking-widest hover:underline">GitHub</Link>
-                <Link href="https://www.linkedin.com/in/beatriz-araújo-381b2b249" className="text-prime font-bold text-xs uppercase tracking-widest hover:underline">LinkedIn</Link>
+                <Link href="https://github.com/vrsebeatriz" target="_blank" className="text-prime font-bold text-xs uppercase tracking-widest hover:underline">GitHub</Link>
+                <Link href="https://www.linkedin.com/in/beatriz-araújo-381b2b249" target="_blank" className="text-prime font-bold text-xs uppercase tracking-widest hover:underline">LinkedIn</Link>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=anabaraujo009@gmail.com&su=Contato via Portfolio" target="_blank" className="text-prime font-bold text-xs uppercase tracking-widest hover:underline">E-mail</a>
               </div>
             </div>
           </div>

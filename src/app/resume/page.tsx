@@ -214,7 +214,7 @@ export default function Resume() {
             </div>
           </div>
 
-          <div className="flex gap-4 items-end">
+          <div className="flex flex-wrap gap-4 items-end">
             <a href="https://github.com/vrsebeatriz" target="_blank" rel="noopener noreferrer"
               className="flex items-center gap-1.5 text-xs font-bold text-beige/50 hover:text-prime transition-colors">
               <Github className="w-4 h-4" /> github.com/vrsebeatriz
@@ -222,6 +222,10 @@ export default function Resume() {
             <a href="https://www.linkedin.com/in/beatriz-araújo-381b2b249" target="_blank" rel="noopener noreferrer"
               className="flex items-center gap-1.5 text-xs font-bold text-beige/50 hover:text-prime transition-colors">
               <Linkedin className="w-4 h-4" /> LinkedIn
+            </a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=anabaraujo009@gmail.com&su=Contato via Portfolio" target="_blank" rel="noopener noreferrer"
+              className="flex items-center gap-1.5 text-xs font-bold text-beige/50 hover:text-prime transition-colors">
+              <Mail className="w-4 h-4" /> E-mail
             </a>
           </div>
         </div>

@@ -22,7 +22,7 @@ export default function Footer() {
             <a href="https://www.linkedin.com/in/beatriz-araújo-381b2b249" target="_blank" className="w-10 h-10 rounded-full bg-beige flex items-center justify-center text-muted hover:bg-prime hover:text-white transition-all">
               <Linkedin className="w-5 h-5" />
             </a>
-            <a href="mailto:anabaraujo009@gmail.com?subject=Contato via Portfolio" target="_self" className="w-10 h-10 rounded-full bg-beige flex items-center justify-center text-muted hover:bg-prime hover:text-white transition-all">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=anabaraujo009@gmail.com&su=Contato via Portfolio" target="_blank" className="w-10 h-10 rounded-full bg-beige flex items-center justify-center text-muted hover:bg-prime hover:text-white transition-all">
               <Mail className="w-5 h-5" />
             </a>
           </div>
@@ -42,7 +42,7 @@ export default function Footer() {
           <h4 className="font-display font-bold uppercase text-xs tracking-widest text-muted">Contato</h4>
           <div className="space-y-2">
             <p className="text-sm font-bold">Mossoró, RN - Brasil</p>
-            <a href="mailto:anabaraujo009@gmail.com?subject=Contato via Portfolio" target="_self" className="text-sm font-bold text-prime block">anabaraujo009@gmail.com</a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=anabaraujo009@gmail.com&su=Contato via Portfolio" target="_blank" className="text-sm font-bold text-prime block">anabaraujo009@gmail.com</a>
           </div>
         </div>
       </div>

@@ -86,7 +86,7 @@ export default function Home() {
             <a href="https://www.linkedin.com/in/beatriz-araújo-381b2b249" target="_blank" rel="noopener noreferrer" className="text-muted hover:text-prime transition-colors transform hover:-translate-y-0.5">
               <Linkedin className="w-5 h-5" />
             </a>
-            <a href="mailto:anabaraujo009@gmail.com?subject=Contato via Portfolio" target="_self" className="text-muted hover:text-prime transition-colors transform hover:-translate-y-0.5">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=anabaraujo009@gmail.com&su=Contato via Portfolio" target="_blank" className="text-muted hover:text-prime transition-colors transform hover:-translate-y-0.5">
               <Mail className="w-5 h-5" />
             </a>
           </motion.div>

@@ -36,7 +36,7 @@ export default function RootLayout({
             <a href="https://www.linkedin.com/in/beatriz-araújo-381b2b249" target="_blank" className="text-muted hover:text-prime transition-all hover:-translate-y-1">
               <Linkedin className="w-5 h-5" />
             </a>
-            <a href="mailto:anabaraujo009@gmail.com?subject=Contato via Portfolio" target="_self" className="text-muted hover:text-prime transition-all hover:-translate-y-1">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=anabaraujo009@gmail.com&su=Contato via Portfolio" target="_blank" className="text-muted hover:text-prime transition-all hover:-translate-y-1">
               <Mail className="w-5 h-5" />
             </a>
           </div>
