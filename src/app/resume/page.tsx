@@ -57,11 +57,11 @@ const timeline = [
 ];
 
 const skills = [
-  { area: "Front-end & Mobile", items: "React, React Native, Next.js, TypeScript, Tailwind CSS, Ruby, PHP" },
-  { area: "Back-end & Arquitetura", items: "Node.js, Java, Python — APIs RESTful, PostgreSQL, Redis" },
-  { area: "IA & Pesquisa", items: "Deep Learning, NLP, Ontologias (OWL)" },
-  { area: "Cibersegurança", items: "Análise de Malware, Desofuscação de Código" },
-  { area: "Ferramentas", items: "Git, GitHub, VS Code, IntelliJ IDEA, Linux" },
+  { area: "Front-end & Mobile", items: "React.js, React Native, Next.js, TypeScript, Tailwind CSS" },
+  { area: "Back-end & Arquitetura", items: "Node.js, Java, Python, Ruby, PHP — APIs RESTful, PostgreSQL, Redis, Arquitetura Monorepo" },
+  { area: "IA & Dados", items: "Deep Learning, NLP (Processamento de Linguagem Natural), Google Gemini API, Integração de Ontologias (OWL)" },
+  { area: "Cibersegurança (AppSec)", items: "Security-by-Design, OWASP Top 10, Análise de Malware, Desofuscação de Código, LGPD" },
+  { area: "Ferramentas & DevOps", items: "Git/GitHub, Docker, Linux, VS Code, IntelliJ IDEA, Metodologias Ágeis (Scrum)" },
 ];
 
 const languages = [
