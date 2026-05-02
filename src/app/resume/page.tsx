@@ -50,7 +50,7 @@ const timeline = [
     company: "Instituto Federal do Rio Grande do Norte (IFRN)",
     location: "Mossoró, RN",
     bullets: [
-      "Idealizou e executou o 'Projeto de Iluminação com Fonte Alternativa de Energia no IFRN – Campus Mossoró'.",
+      "Idealizou e executou como TCC o 'Projeto de Iluminação com Fonte Alternativa de Energia no IFRN – Campus Mossoró'.",
     ],
     icon: Code,
   },
