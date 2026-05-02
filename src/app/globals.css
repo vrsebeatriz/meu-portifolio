@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 43, 41, 41;
+  --background-rgb: 242, 240, 238;
+}
+
+[data-theme='dark'] {
+  --foreground-rgb: 242, 240, 238;
+  --background-rgb: 13, 16, 23;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+  font-family: var(--font-inter), sans-serif;
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-white/10 backdrop-blur-md border border-white/20 rounded-xl shadow-xl;
+  }
+  
+  .btn-prime {
+    @apply bg-prime text-white px-6 py-3 rounded-full font-bold transition-all hover:scale-105 hover:shadow-lg active:scale-95;
+  }
+
+  .nav-link {
+    @apply relative py-1 px-2 uppercase text-xs font-bold transition-all hover:text-prime;
+  }
+}
+
+.liquid-border {
+  position: relative;
+  height: 0.2rem;
+  background: #e45447;
+}
+
+.liquid-border::before {
+  content: "";
+  position: absolute;
+  top: -0.2rem;
+  left: -0.2rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  background: #e45447;
+  border-radius: 9999px;
+}
+
+/* Custom Prose Styles for Articles */
+.prose h2 {
+  @apply font-display font-black text-3xl mt-12 mb-6 text-charcoal;
+}
+
+.prose h3 {
+  @apply font-display font-bold text-xl mt-8 mb-4 text-charcoal;
+}
+
+.prose p {
+  @apply mb-6 text-charcoal/80 leading-relaxed text-lg;
+}
+
+.prose strong {
+  @apply text-charcoal font-bold;
+}
+
+.prose ul {
+  @apply list-disc list-inside mb-6 space-y-2 text-charcoal/80;
+}
+
+.prose blockquote {
+  @apply border-l-4 border-prime pl-4 italic text-charcoal/70 my-8;
+}
+
+.prose code {
+  @apply bg-prime/5 text-prime px-1.5 py-0.5 rounded font-mono text-sm;
+}
