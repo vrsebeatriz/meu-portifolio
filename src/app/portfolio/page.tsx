@@ -10,7 +10,7 @@ const projects = [
     tags: ["Express 5", "TypeScript", "Supabase", "Mercado Pago", "JWT", "E-commerce"],
     category: "Full-Stack E-commerce",
     link: "https://www.robonorte.com.br/",
-    image: "/images/robonorte.jpg",
+    image: "/images/robonorte.png",
   },
   {
     title: "CypherGuard AI",

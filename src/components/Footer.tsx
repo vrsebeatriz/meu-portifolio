@@ -12,7 +12,7 @@ export default function Footer() {
             <img src="/logo.png" alt="Ana Beatriz logo" className="w-10 h-10 rounded-lg object-cover" />
             <span className="font-display font-black text-xl tracking-tighter uppercase leading-tight">Ana Beatriz<br/><span className="text-prime text-xs font-bold tracking-[0.2em] normal-case">Software Engineer</span></span>
           </div>
-          <p className="text-charcoal/60 text-sm max-w-sm leading-relaxed">
+          <p className="text-beige-dark text-sm max-w-sm leading-relaxed">
             Desenvolvedora Full-Stack e pesquisadora em IA e Cibersegurança. Apaixonada por resolver quebra-cabeças complexos com TypeScript, Java e Node.js.
           </p>
           <div className="flex gap-4">

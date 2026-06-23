@@ -89,7 +89,7 @@ export default function Resume() {
       {/* ── Header ─────────────────────────────────── */}
       <header className="space-y-6">
         <motion.div {...fadeUp}>
-          <h1 className="text-4xl md:text-6xl font-display font-black text-charcoal leading-tight">
+          <h1 className="text-4xl md:text-6xl font-display font-black text-white leading-tight">
             Meu <span className="text-prime">Currículo</span>
           </h1>
           <p className="text-muted text-sm uppercase font-bold tracking-widest mt-2">
@@ -104,7 +104,7 @@ export default function Resume() {
           <h3 className="text-xs font-bold uppercase tracking-widest text-prime flex items-center gap-2">
             <Star className="w-3.5 h-3.5" /> Objetivo Profissional
           </h3>
-          <p className="text-charcoal/80 text-sm leading-relaxed">
+          <p className="text-beige-dark text-sm leading-relaxed">
             Estudante finalista de Ciência da Computação com sólida base no desenvolvimento Full Stack e forte vertente analítica em Inteligência Artificial e Cibersegurança. Procuro a minha primeira oportunidade como Engenheira de Software Júnior ou Desenvolvedora Júnior, onde possa aplicar conhecimentos práticos de programação (React Native, Node.js, Java, Python, Ruby, PHP) e o rigor científico da pesquisa para construir sistemas seguros, escaláveis e de alto impacto.
           </p>
         </motion.div>
@@ -113,7 +113,7 @@ export default function Resume() {
       {/* ── Experience & Education Timeline ─────────── */}
       <section className="space-y-8">
         <motion.div {...fadeUp}>
-          <h2 className="text-2xl md:text-3xl font-display font-black text-charcoal uppercase tracking-tighter">
+          <h2 className="text-2xl md:text-3xl font-display font-black text-white uppercase tracking-tighter">
             Experiência & <span className="text-prime">Formação</span>
           </h2>
           <div className="liquid-border w-28 mt-3" />
@@ -140,7 +140,7 @@ export default function Resume() {
                     <Calendar className="w-3 h-3" />{item.year}
                   </span>
                 </div>
-                <h3 className="text-lg font-display font-bold text-charcoal leading-tight">{item.title}</h3>
+                <h3 className="text-lg font-display font-bold text-white leading-tight">{item.title}</h3>
                 <p className="text-muted font-bold text-xs flex items-center gap-1.5">
                   {item.company}
                   <span className="text-beige-dark">·</span>
@@ -148,7 +148,7 @@ export default function Resume() {
                 </p>
                 <ul className="space-y-1 mt-2">
                   {item.bullets.map((b, i) => (
-                    <li key={i} className="text-charcoal/70 text-sm leading-relaxed flex gap-2">
+                    <li key={i} className="text-beige-dark text-sm leading-relaxed flex gap-2">
                       <span className="text-prime mt-1.5 shrink-0">›</span>
                       {b}
                     </li>
@@ -163,7 +163,7 @@ export default function Resume() {
       {/* ── Events ──────────────────────────────────── */}
       <section className="space-y-8">
         <motion.div {...fadeUp}>
-          <h2 className="text-2xl md:text-3xl font-display font-black text-charcoal uppercase tracking-tighter">
+          <h2 className="text-2xl md:text-3xl font-display font-black text-white uppercase tracking-tighter">
             Eventos & <span className="text-prime">Participações</span>
           </h2>
           <div className="liquid-border w-28 mt-3" />
@@ -176,8 +176,8 @@ export default function Resume() {
               <span className="text-[10px] font-bold text-prime uppercase tracking-widest flex items-center gap-1">
                 <Users className="w-3 h-3" />{ev.type}
               </span>
-              <p className="font-display font-bold text-charcoal text-sm">{ev.name}</p>
-              <p className="text-charcoal/60 text-xs leading-relaxed">{ev.desc}</p>
+              <p className="font-display font-bold text-white text-sm">{ev.name}</p>
+              <p className="text-beige-dark text-xs leading-relaxed">{ev.desc}</p>
             </div>
           ))}
         </motion.div>

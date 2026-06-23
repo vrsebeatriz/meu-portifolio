@@ -33,7 +33,7 @@ export default function Shelf() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
         >
-          <h1 className="text-4xl md:text-7xl font-display font-black text-charcoal leading-none tracking-tighter">
+          <h1 className="text-4xl md:text-7xl font-display font-black text-white leading-none tracking-tighter">
             Minha <span className="text-prime">Estante</span>
           </h1>
           <p className="text-muted text-sm uppercase font-bold tracking-[0.3em] mt-4">
@@ -46,7 +46,7 @@ export default function Shelf() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2 }}
-          className="text-charcoal/60 text-lg max-w-2xl leading-relaxed"
+          className="text-beige-dark text-lg max-w-2xl leading-relaxed"
         >
           Um espaço onde documento minhas pesquisas em Engenharia de Software, 
           IA e Cibersegurança. O objetivo é transformar aprendizado em conhecimento compartilhado de alto nível.
@@ -75,7 +75,7 @@ export default function Shelf() {
 
               <div className="flex-1 space-y-4">
                 <div className="flex items-center gap-3">
-                   <span className="px-2 py-0.5 bg-beige-dark/30 text-charcoal/60 text-[10px] font-bold uppercase tracking-wider rounded">
+                   <span className="px-2 py-0.5 bg-white/10 text-muted text-[10px] font-bold uppercase tracking-wider rounded">
                      {article.category}
                    </span>
                    <div className="flex gap-2">
@@ -87,20 +87,20 @@ export default function Shelf() {
                    </div>
                 </div>
 
-                <h2 className="text-2xl md:text-4xl font-display font-black text-charcoal group-hover:text-prime transition-all duration-300 tracking-tight leading-tight">
+                <h2 className="text-2xl md:text-4xl font-display font-black text-white group-hover:text-prime transition-all duration-300 tracking-tight leading-tight">
                   <Link href={`/shelf/${article.slug}`}>
                     {article.title}
                   </Link>
                 </h2>
 
-                <p className="text-charcoal/70 text-base md:text-lg leading-relaxed max-w-3xl">
+                <p className="text-beige-dark text-base md:text-lg leading-relaxed max-w-3xl">
                   {article.excerpt}
                 </p>
 
                 <div className="pt-2">
                   <Link 
                     href={`/shelf/${article.slug}`}
-                    className="inline-flex items-center gap-2 text-xs font-black uppercase tracking-widest text-charcoal border-b-2 border-charcoal/10 pb-1 group-hover:border-prime group-hover:text-prime transition-all"
+                    className="inline-flex items-center gap-2 text-xs font-black uppercase tracking-widest text-white border-b-2 border-white/10 pb-1 group-hover:border-prime group-hover:text-prime transition-all"
                   >
                     Ler Artigo Completo <ArrowRight className="w-3 h-3 transition-transform group-hover:translate-x-1" />
                   </Link>
@@ -120,8 +120,8 @@ export default function Shelf() {
           <BookOpen className="w-8 h-8" />
         </div>
         <div className="space-y-2">
-          <h3 className="text-2xl md:text-3xl font-display font-black text-charcoal uppercase tracking-tighter">Quer acompanhar meus estudos?</h3>
-          <p className="text-charcoal/60 max-w-md mx-auto">Sempre posto novos artigos sobre IA, segurança e backend conforme avanço em meus projetos.</p>
+          <h3 className="text-2xl md:text-3xl font-display font-black text-white uppercase tracking-tighter">Quer acompanhar meus estudos?</h3>
+          <p className="text-beige-dark max-w-md mx-auto">Sempre posto novos artigos sobre IA, segurança e backend conforme avanço em meus projetos.</p>
         </div>
         <div className="flex flex-col sm:flex-row gap-3 justify-center max-w-md mx-auto">
           <input 

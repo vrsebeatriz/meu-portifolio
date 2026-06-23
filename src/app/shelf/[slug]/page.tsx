@@ -98,12 +98,12 @@ export default function Article({ params }: { params: { slug: string } }) {
             <motion.h1 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              className="text-4xl md:text-6xl font-display font-black text-charcoal leading-[1.1] tracking-tighter"
+              className="text-4xl md:text-6xl font-display font-black text-white leading-[1.1] tracking-tighter"
             >
               {article.title}
             </motion.h1>
             
-            <p className="text-xl text-charcoal/60 leading-relaxed font-medium">
+            <p className="text-xl text-beige-dark leading-relaxed font-medium">
               {article.description}
             </p>
           </div>
