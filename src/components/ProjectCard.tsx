@@ -46,10 +46,10 @@ export default function ProjectCard({
       onMouseMove={onMouseMove}
       onMouseLeave={onMouseLeave}
       style={{ perspective: 1000, transformStyle: "preserve-3d" }}
-      className="group relative bg-white border border-beige-dark rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl hover:border-prime/20 transition-all duration-300 flex flex-col h-full"
+      className="group relative glass-card overflow-hidden hover:shadow-[0_8px_32px_0_rgba(0,229,255,0.15)] hover:border-prime/30 transition-all duration-500 flex flex-col h-full"
     >
       {/* Image / Category banner */}
-      <div className="aspect-video bg-beige flex items-center justify-center overflow-hidden relative">
+      <div className="aspect-video bg-charcoal-dark flex items-center justify-center overflow-hidden relative">
         {image ? (
           <img
             src={image}
@@ -57,27 +57,27 @@ export default function ProjectCard({
             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
           />
         ) : (
-          <div className="text-beige-dark font-display font-bold text-2xl group-hover:scale-110 transition-transform">
+          <div className="text-muted font-display font-bold text-2xl group-hover:scale-110 transition-transform">
             {category}
           </div>
         )}
         {/* Category pill overlay */}
         <div className="absolute top-3 left-3">
-          <span className="text-[10px] uppercase font-bold tracking-wider px-2.5 py-1 bg-charcoal/80 text-beige rounded-full backdrop-blur-sm">
+          <span className="text-[10px] uppercase font-bold tracking-wider px-2.5 py-1 bg-black/60 text-white border border-white/10 rounded-full backdrop-blur-md">
             {category}
           </span>
         </div>
         {/* Links overlay on hover */}
-        <div className="absolute inset-0 bg-charcoal/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
+        <div className="absolute inset-0 bg-charcoal-dark/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4 backdrop-blur-sm">
           {github && (
             <a
               href={github}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-10 h-10 bg-white rounded-full flex items-center justify-center text-charcoal hover:bg-prime hover:text-white transition-colors"
+              className="w-12 h-12 bg-white/10 border border-white/20 rounded-full flex items-center justify-center text-white hover:bg-prime hover:border-prime hover:text-charcoal-dark transition-all hover:scale-110 hover:shadow-[0_0_15px_rgba(0,229,255,0.5)]"
               onClick={(e) => e.stopPropagation()}
             >
-              <Github className="w-4 h-4" />
+              <Github className="w-5 h-5" />
             </a>
           )}
           {link && (
@@ -85,29 +85,29 @@ export default function ProjectCard({
               href={link}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-10 h-10 bg-white rounded-full flex items-center justify-center text-charcoal hover:bg-prime hover:text-white transition-colors"
+              className="w-12 h-12 bg-white/10 border border-white/20 rounded-full flex items-center justify-center text-white hover:bg-prime hover:border-prime hover:text-charcoal-dark transition-all hover:scale-110 hover:shadow-[0_0_15px_rgba(0,229,255,0.5)]"
               onClick={(e) => e.stopPropagation()}
             >
-              <ExternalLink className="w-4 h-4" />
+              <ExternalLink className="w-5 h-5" />
             </a>
           )}
         </div>
       </div>
 
-      <div className="p-5 space-y-3 flex-1 flex flex-col">
-        <h3 className="text-xl font-display font-bold text-charcoal group-hover:text-prime transition-colors leading-tight">
+      <div className="p-6 space-y-4 flex-1 flex flex-col relative z-10 bg-gradient-to-b from-transparent to-charcoal-dark/50">
+        <h3 className="text-xl font-display font-bold text-white group-hover:text-prime transition-colors leading-tight drop-shadow-md">
           {title}
         </h3>
 
-        <p className="text-charcoal/65 text-sm leading-relaxed flex-1">
+        <p className="text-beige-dark text-sm leading-relaxed flex-1">
           {description}
         </p>
 
-        <div className="flex flex-wrap gap-1.5 pt-1">
+        <div className="flex flex-wrap gap-2 pt-2">
           {tags.map((tag) => (
             <span
               key={tag}
-              className="text-[10px] uppercase font-bold tracking-wider px-2 py-1 bg-beige text-charcoal/60 rounded-md border border-beige-dark"
+              className="text-[10px] uppercase font-bold tracking-wider px-2 py-1 bg-white/5 text-muted rounded-md border border-white/10 group-hover:border-white/20 transition-colors"
             >
               {tag}
             </span>
@@ -116,7 +116,7 @@ export default function ProjectCard({
 
         {/* Bottom link row */}
         {(github || link) && (
-          <div className="flex gap-3 pt-2 border-t border-beige-dark mt-auto">
+          <div className="flex gap-4 pt-4 border-t border-white/10 mt-auto">
             {github && (
               <a
                 href={github}
@@ -124,7 +124,7 @@ export default function ProjectCard({
                 rel="noopener noreferrer"
                 className="flex items-center gap-1.5 text-xs font-bold text-muted hover:text-prime transition-colors"
               >
-                <Github className="w-3.5 h-3.5" />
+                <Github className="w-4 h-4" />
                 GitHub
               </a>
             )}
@@ -135,7 +135,7 @@ export default function ProjectCard({
                 rel="noopener noreferrer"
                 className="flex items-center gap-1.5 text-xs font-bold text-muted hover:text-prime transition-colors"
               >
-                <ExternalLink className="w-3.5 h-3.5" />
+                <ExternalLink className="w-4 h-4" />
                 Ver Site
               </a>
             )}

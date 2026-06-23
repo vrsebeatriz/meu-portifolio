@@ -5,6 +5,14 @@ import ProjectCard from "@/components/ProjectCard";
 
 const projects = [
   {
+    title: "RoboNorte",
+    description: "Plataforma de e-commerce completa com Loja Virtual, Painel Administrativo e API Backend.",
+    tags: ["Express 5", "TypeScript", "Supabase", "Mercado Pago", "JWT", "E-commerce"],
+    category: "Full-Stack E-commerce",
+    link: "https://www.robonorte.com.br/",
+    image: "/images/robonorte.jpg",
+  },
+  {
     title: "CypherGuard AI",
     description: "Plataforma SAST de nível empresarial projetada para precisão cirúrgica e remediação autônoma usando LLMs locais.",
     tags: ["Inteligência Artificial", "Deep Learning", "Cibersegurança", "Análise de Malware", "Desofuscação"],
@@ -32,14 +40,17 @@ const projects = [
 
 export default function Portfolio() {
   return (
-    <div className="min-h-screen p-4 md:p-8 pt-24 md:pt-32 max-w-6xl mx-auto space-y-12">
-      <header className="space-y-4">
+    <div className="min-h-screen p-4 md:p-8 pt-24 md:pt-32 max-w-6xl mx-auto space-y-12 relative">
+      {/* Ambient Effects */}
+      <div className="absolute top-20 left-10 w-96 h-96 bg-prime/10 rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-blob pointer-events-none" />
+
+      <header className="space-y-4 relative z-10">
         <motion.h1 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-4xl md:text-6xl font-display font-black text-charcoal"
+          className="text-4xl md:text-6xl font-display font-black text-white"
         >
-          Meus <span className="text-prime">Trabalhos</span>
+          Meus <span className="text-prime drop-shadow-[0_0_10px_rgba(0,229,255,0.4)]">Trabalhos</span>
         </motion.h1>
         <motion.p 
           initial={{ opacity: 0, y: 20 }}
