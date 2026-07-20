@@ -31,6 +31,10 @@ yarn-error.log*
 # design/references
 DS/
 
+# claude code / docs
+.claude/
+docs/
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
