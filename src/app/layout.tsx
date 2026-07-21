@@ -7,6 +7,10 @@ const outfit = Outfit({ subsets: ["latin"], variable: "--font-outfit" });
 
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import PageTransition from "@/components/PageTransition";
+import Preloader from "@/components/Preloader";
+import CustomCursor from "@/components/CustomCursor";
+import HeroCanvas from "@/components/HeroCanvas";
 import { Github, Linkedin, Mail } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -26,7 +30,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body className={`${inter.variable} ${outfit.variable} antialiased selection:bg-prime selection:text-white`}>
+      <body className={`${inter.variable} ${outfit.variable} antialiased bg-[#0a0f1d] text-beige selection:bg-prime selection:text-white`}>
+          <HeroCanvas />
+        <Preloader />
+        <CustomCursor />
         {/* Sidebar Socials */}
         <div className="fixed left-6 bottom-0 hidden md:flex flex-col items-center gap-6 z-50">
           <div className="flex flex-col gap-4">
@@ -44,7 +51,7 @@ export default function RootLayout({
         </div>
 
         <Navbar />
-        {children}
+        <PageTransition>{children}</PageTransition>
         <Footer />
       </body>
     </html>

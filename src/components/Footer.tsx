@@ -5,7 +5,7 @@ import { Github, Linkedin, Mail } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="mt-24 pb-12 px-4 md:px-8 max-w-6xl mx-auto border-t border-beige-dark pt-12">
+    <footer className="mt-24 pb-12 px-4 md:px-8 max-w-6xl mx-auto border-t border-white/10 pt-12">
       <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
         <div className="md:col-span-2 space-y-6">
           <div className="flex items-center gap-3">
@@ -16,13 +16,13 @@ export default function Footer() {
             Desenvolvedora Full-Stack e pesquisadora em IA e Cibersegurança. Apaixonada por resolver quebra-cabeças complexos com TypeScript, Java e Node.js.
           </p>
           <div className="flex gap-4">
-            <a href="https://github.com/vrsebeatriz" target="_blank" className="w-10 h-10 rounded-full bg-beige flex items-center justify-center text-muted hover:bg-prime hover:text-white transition-all">
+            <a href="https://github.com/vrsebeatriz" target="_blank" className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-muted hover:bg-prime hover:border-prime hover:text-charcoal-dark transition-all">
               <Github className="w-5 h-5" />
             </a>
-            <a href="https://www.linkedin.com/in/beatriz-araújo-381b2b249" target="_blank" className="w-10 h-10 rounded-full bg-beige flex items-center justify-center text-muted hover:bg-prime hover:text-white transition-all">
+            <a href="https://www.linkedin.com/in/beatriz-araújo-381b2b249" target="_blank" className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-muted hover:bg-prime hover:border-prime hover:text-charcoal-dark transition-all">
               <Linkedin className="w-5 h-5" />
             </a>
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=anabaraujo009@gmail.com&su=Contato via Portfolio" target="_blank" className="w-10 h-10 rounded-full bg-beige flex items-center justify-center text-muted hover:bg-prime hover:text-white transition-all">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=anabaraujo009@gmail.com&su=Contato via Portfolio" target="_blank" className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-muted hover:bg-prime hover:border-prime hover:text-charcoal-dark transition-all">
               <Mail className="w-5 h-5" />
             </a>
           </div>
@@ -53,7 +53,7 @@ export default function Footer() {
         </p>
         <div className="flex h-1 w-full md:w-48">
           <div className="h-full w-1/4 bg-prime" />
-          <div className="h-full w-1/4 bg-gold" />
+          <div className="h-full w-1/4 bg-purple-500" />
           <div className="h-full w-1/4 bg-beige-dark" />
           <div className="h-full w-1/4 bg-muted" />
         </div>

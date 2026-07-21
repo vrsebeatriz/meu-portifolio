@@ -100,7 +100,7 @@ export default function Resume() {
 
         {/* Objetivo */}
         <motion.div {...fadeUp} transition={{ delay: 0.2 }}
-          className="bg-beige border border-beige-dark rounded-xl p-6 space-y-2">
+          className="glass-card p-6 space-y-2">
           <h3 className="text-xs font-bold uppercase tracking-widest text-prime flex items-center gap-2">
             <Star className="w-3.5 h-3.5" /> Objetivo Profissional
           </h3>
@@ -125,9 +125,9 @@ export default function Resume() {
               key={item.title}
               {...fadeUp}
               transition={{ delay: index * 0.08 }}
-              className="relative pl-10 md:pl-14 pb-10 border-l-2 border-beige-dark last:border-0 last:pb-0"
+              className="relative pl-10 md:pl-14 pb-10 border-l-2 border-white/10 last:border-0 last:pb-0"
             >
-              <div className="absolute left-[-17px] top-0 w-8 h-8 bg-white border-2 border-prime rounded-full flex items-center justify-center text-prime z-10 shadow-sm">
+              <div className="absolute left-[-17px] top-0 w-8 h-8 bg-charcoal-dark border-2 border-prime rounded-full flex items-center justify-center text-prime z-10 shadow-[0_0_10px_rgba(0,229,255,0.3)]">
                 <item.icon className="w-3.5 h-3.5" />
               </div>
 
@@ -172,7 +172,7 @@ export default function Resume() {
         <motion.div {...fadeUp} transition={{ delay: 0.1 }}
           className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {events.map((ev, i) => (
-            <div key={i} className="bg-white border border-beige-dark rounded-xl p-4 space-y-1 hover:border-prime/30 transition-colors">
+            <div key={i} className="glass-card p-4 space-y-1 hover:border-prime/30 transition-colors">
               <span className="text-[10px] font-bold text-prime uppercase tracking-widest flex items-center gap-1">
                 <Users className="w-3 h-3" />{ev.type}
               </span>
@@ -184,7 +184,7 @@ export default function Resume() {
       </section>
 
       {/* ── Skills & Languages ─────────────────────── */}
-      <section className="bg-charcoal text-beige p-8 md:p-10 rounded-2xl shadow-2xl space-y-10">
+      <section className="bg-charcoal text-beige p-8 md:p-10 rounded-2xl shadow-2xl space-y-10 border border-white/5">
         <h2 className="text-2xl font-display font-black uppercase tracking-tighter">Ingredientes Técnicos</h2>
 
         <div className="space-y-5">

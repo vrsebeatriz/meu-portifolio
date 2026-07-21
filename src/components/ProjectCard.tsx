@@ -42,14 +42,16 @@ export default function ProjectCard({
 
   return (
     <motion.div
+      data-cursor-hover="true"
+      data-cursor-text="Ver"
       animate={{ rotateX: rotate.x, rotateY: rotate.y }}
       onMouseMove={onMouseMove}
       onMouseLeave={onMouseLeave}
       style={{ perspective: 1000, transformStyle: "preserve-3d" }}
       className="group relative glass-card overflow-hidden hover:shadow-[0_8px_32px_0_rgba(0,229,255,0.15)] hover:border-prime/30 transition-all duration-500 flex flex-col h-full"
     >
-      {/* Image / Category banner */}
       <div className="aspect-video bg-charcoal-dark flex items-center justify-center overflow-hidden relative">
+        <div className="pointer-events-none absolute inset-0 z-20 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out bg-gradient-to-r from-transparent via-white/10 to-transparent" />
         {image ? (
           <img
             src={image}
@@ -61,7 +63,6 @@ export default function ProjectCard({
             {category}
           </div>
         )}
-        {/* Category pill overlay */}
         <div className="absolute top-3 left-3">
           <span className="text-[10px] uppercase font-bold tracking-wider px-2.5 py-1 bg-black/60 text-white border border-white/10 rounded-full backdrop-blur-md">
             {category}

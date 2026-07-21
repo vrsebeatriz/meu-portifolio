@@ -114,7 +114,7 @@ export default function Shelf() {
       <motion.div 
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        className="mt-24 p-8 md:p-12 bg-beige border border-beige-dark rounded-[2rem] text-center space-y-6"
+        className="mt-24 p-8 md:p-12 glass-card rounded-[2rem] text-center space-y-6"
       >
         <div className="w-16 h-16 bg-prime rounded-2xl mx-auto flex items-center justify-center text-beige">
           <BookOpen className="w-8 h-8" />
@@ -127,7 +127,7 @@ export default function Shelf() {
           <input 
             type="email" 
             placeholder="Seu melhor e-mail" 
-            className="flex-1 px-6 py-3 rounded-full bg-white border border-beige-dark focus:outline-none focus:border-prime text-sm"
+            className="flex-1 px-6 py-3 rounded-full bg-charcoal-light/50 border border-white/10 text-white placeholder:text-muted focus:outline-none focus:border-prime text-sm"
           />
           <button className="btn-prime whitespace-nowrap">
             Me avisar

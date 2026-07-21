@@ -38,7 +38,6 @@ export default function Home() {
           <motion.h1
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.2 }}
             className="text-6xl md:text-8xl font-display font-black leading-[0.95] text-white"
           >
             Software <br />
@@ -58,7 +57,6 @@ export default function Home() {
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 0.6 }}
             className="text-beige-dark text-base leading-relaxed max-w-md"
           >
             Desenvolvedora focada em unir arquiteturas de software seguras a interfaces modernas e escaláveis. Transformo problemas complexos em soluções elegantes.
@@ -158,7 +156,6 @@ export default function Home() {
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
             className="text-3xl md:text-5xl font-display font-black text-white uppercase tracking-tighter"
           >
             Sobre <span className="text-prime drop-shadow-[0_0_10px_rgba(0,229,255,0.4)]">Mim</span>

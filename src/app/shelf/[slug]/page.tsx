@@ -61,7 +61,7 @@ export default function Article({ params }: { params: { slug: string } }) {
   }
 
   return (
-    <div className="min-h-screen bg-beige/30 selection:bg-prime/10 selection:text-prime">
+    <div className="min-h-screen selection:bg-prime/10 selection:text-prime">
       <motion.div 
         initial={{ scaleX: 0 }}
         animate={{ scaleX: 1 }}
@@ -140,7 +140,7 @@ export default function Article({ params }: { params: { slug: string } }) {
             ))}
           </div>
           
-          <div className="mt-12 p-8 bg-charcoal rounded-3xl text-beige flex flex-col md:flex-row items-center gap-8">
+          <div className="mt-12 p-8 bg-charcoal border border-transparent rounded-3xl text-beige flex flex-col md:flex-row items-center gap-8">
             <div className="w-20 h-20 bg-white rounded-2xl shrink-0 flex items-center justify-center overflow-hidden border-2 border-prime/20 shadow-inner">
                <img src="/logo.png" alt="Logo" className="w-full h-full object-contain p-2" />
             </div>
