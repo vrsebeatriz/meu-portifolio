@@ -8,24 +8,23 @@ import { notFound } from "next/navigation";
 const articles = {
   "malware-analysis": {
     title: "Desofuscação de Código com IA Local",
-    description: "Uma investigação técnica sobre o uso de LLMs (Large Language Models) locais para a engenharia reversa de scripts maliciosos altamente ofuscados.",
+    description: "Uma exploração conceitual sobre o potencial uso de LLMs (Large Language Models) locais para auxiliar na engenharia reversa de scripts ofuscados.",
     content: [
-      { type: "p", text: "No cenário atual de cibersegurança, a ofuscação de código tornou-se uma arte sombria. Malware modernizados não apenas escondem strings, mas utilizam técnicas de 'Control Flow Flattening', 'Dead Code Injection' e 'Variable Renaming' massivo para tornar a análise estática quase impossível. No CypherGuard AI, decidi explorar uma fronteira pouco documentada: o uso de Modelos de Linguagem locais (Llama 3 via Ollama) como motores de desofuscação semântica." },
+      { type: "blockquote", text: "Nota: O conteúdo a seguir é uma proposta de pesquisa e exploração conceitual sobre um pipeline de desofuscação assistida por IA local, não descrevendo uma ferramenta atualmente implementada." },
+      { type: "p", text: "No cenário atual de cibersegurança, a ofuscação de código tornou-se uma arte sombria. Códigos maliciosos modernos não apenas escondem strings, mas utilizam técnicas de 'Control Flow Flattening', 'Dead Code Injection' e 'Variable Renaming' massivo para tornar a análise estática quase impossível. Durante o desenvolvimento do CypherGuard AI, surgiu uma curiosidade técnica sobre uma fronteira pouco documentada: seria possível usar Modelos de Linguagem locais (como Llama 3 via Ollama) como motores de desofuscação semântica?" },
       { type: "h2", text: "O Problema da Heurística Tradicional" },
       { type: "p", text: "Ferramentas como descompactadores estáticos e analisadores baseados em regras (YARA) são excelentes para ameaças conhecidas, mas falham miseravelmente diante de ofuscadores polimórficos. O desafio é que o código ofuscado mantém sua validade sintática, mas perde sua legibilidade humana. Um loop simples pode ser transformado em uma máquina de estados complexa com centenas de 'switches' inúteis." },
-      { type: "h2", text: "A Metodologia CypherGuard" },
-      { type: "p", text: "Minha pesquisa foca em um pipeline de desofuscação híbrido. O primeiro passo não é a IA, mas a Normalização de Árvore de Sintaxe Abstrata (AST). Utilizamos parsers robustos para reconstruir a estrutura do script, removendo o ruído visual básico antes de qualquer processamento neural." },
+      { type: "h2", text: "Uma Proposta de Metodologia" },
+      { type: "p", text: "Uma abordagem teórica interessante focaria em um pipeline de desofuscação híbrido. O primeiro passo não seria a IA, mas a Normalização de Árvore de Sintaxe Abstrata (AST). Utilizando parsers robustos, seria possível reconstruir a estrutura do script, removendo o ruído visual básico antes de qualquer processamento neural." },
       { type: "h3", text: "Engenharia de Prompt para Reversão" },
-      { type: "p", text: "O segredo não está apenas no modelo, mas no contexto fornecido. Desenvolvi prompts que forçam a IA a agir como um compilador reverso. Em vez de pedir 'o que este código faz?', fornecemos trechos normalizados e pedimos para 'identificar a intenção funcional e renomear variáveis baseando-se no fluxo de dados'. O resultado é a transformação de nomes como '_0x4a2b' em 'decryptionKey' ou 'maliciousSocket'." },
-      { type: "h3", text: "IA Local: Segurança em Primeiro Lugar" },
-      { type: "blockquote", text: "Analisar malware em LLMs comerciais (como GPT-4) é um erro crítico de segurança. O código malicioso enviado pode ser incorporado em treinos futuros ou expor vulnerabilidades do seu ambiente de pesquisa. O CypherGuard utiliza apenas modelos locais, garantindo um ambiente 'air-gapped' virtual." },
-      { type: "h2", text: "Resultados Experimentais" },
-      { type: "p", text: "Em um benchmark com 50 amostras de scripts 'stealers' (ladrões de credenciais), conseguimos uma taxa de sucesso de 82% na recuperação da lógica de comunicação C2 (Command & Control). O tempo de análise, que manualmente levaria de 4 a 6 horas, foi reduzido para menos de 15 minutos de processamento e revisão." },
+      { type: "p", text: "Nesta proposta, o segredo não estaria apenas no modelo, mas no contexto fornecido. Uma abordagem possível seria desenvolver prompts que forcem a IA a agir como um compilador reverso. Em vez de pedir 'o que este código faz?', forneceríamos trechos normalizados e pediríamos para 'identificar a intenção funcional e renomear variáveis baseando-se no fluxo de dados'. Isso poderia, em teoria, transformar algo como '_0x4a2b' em um nome mais legível como 'decryptionKey' ou 'maliciousSocket'." },
+      { type: "h3", text: "IA Local: Princípio de Segurança" },
+      { type: "blockquote", text: "Analisar amostras de código suspeito em LLMs comerciais (como GPT-4) seria um erro crítico de segurança. O código enviado poderia ser incorporado em treinos futuros ou expor vulnerabilidades do ambiente de pesquisa. Por isso, qualquer arquitetura desse tipo deveria utilizar apenas modelos locais, garantindo um ambiente 'air-gapped' virtual." },
       { type: "h2", text: "Conclusão e Futuro" },
-      { type: "p", text: "A desofuscação assistida por IA não substitui o analista, mas elimina o trabalho braçal de 'limpeza'. O próximo passo do projeto é a integração direta com descompiladores de binários (Ghidra/IDA Pro) para estender essa capacidade para além do JavaScript e Python." }
+      { type: "p", text: "A desofuscação assistida por IA não tem o objetivo de substituir o analista, mas de potencialmente eliminar o trabalho braçal de 'limpeza'. Um próximo passo interessante para essa ideia seria explorar a integração teórica direta com descompiladores de binários (Ghidra/IDA Pro) para tentar estender essa capacidade para além de linguagens interpretadas." }
     ],
     date: "12 Abr, 2026",
-    readTime: "18 min",
+    readTime: "10 min",
     category: "Security",
     tags: ["Engenharia Reversa", "IA Local", "Llama 3", "Malware Analysis"]
   },
@@ -41,8 +40,8 @@ const articles = {
       { type: "h3", text: "O Desafio da Testabilidade" },
       { type: "p", text: "Com a Clean Architecture, atingir 100% de cobertura de testes na lógica central torna-se trivial. Como a aplicação não depende de IO externo, os testes rodam em milissegundos, sem a necessidade de subir containers Docker ou bancos reais para validar regras complexas de negócio." },
       { type: "blockquote", text: "Software que é difícil de testar é software que é difícil de mudar. E software que não muda, morre." },
-      { type: "h2", text: "Exemplo Real: De Express para Fastify" },
-      { type: "p", text: "No desenvolvimento do TaskFlow Pro, começamos utilizando Express. Ao percebermos a necessidade de maior performance, migramos para Fastify em menos de uma tarde. Como as rotas eram apenas 'adaptadores' que chamavam Casos de Uso agnósticos, não precisamos alterar uma única linha de lógica de gerenciamento de tarefas." },
+      { type: "h2", text: "Um Benefício Prático" },
+      { type: "p", text: "Um benefício prático da Clean Architecture: se um dia fosse necessário trocar de Express para Fastify por performance, a migração se limitaria à camada de adaptadores, sem tocar na lógica de negócio." },
       { type: "h2", text: "Veredito: Vale o Boilerplate?" },
       { type: "p", text: "Sim, Clean Architecture exige mais arquivos e interfaces iniciais. No entanto, para projetos que pretendem durar mais de seis meses ou que possuem regras de negócio complexas, o custo de não a utilizar será pago com juros altíssimos em forma de débito técnico e bugs de regressão." }
     ],
