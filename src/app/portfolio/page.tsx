@@ -14,8 +14,8 @@ const projects = [
   },
   {
     title: "CypherGuard AI",
-    description: "Ferramenta SAST que normaliza árvores de sintaxe abstrata (AST) e utiliza modelos Llama 3 locais via Ollama para identificar e sugerir desofuscação semântica em scripts maliciosos polimórficos.",
-    tags: ["Inteligência Artificial", "Deep Learning", "Cibersegurança", "Análise de Malware", "Desofuscação"],
+    description: "Plataforma SAST + SCA local-first: combina Semgrep e análise de AST para detectar vulnerabilidades no código (injeção de comando, XSS, SQLi, deserialização insegura, entre outras), valida os achados com um LLM local (Llama 3 via Ollama) e audita dependências contra CVEs conhecidos via OSV.dev. Aplica patches de correção automaticamente via CLI.",
+    tags: ["Inteligência Artificial", "SAST", "SCA", "Semgrep", "Auditoria de Dependências", "Cibersegurança", "LLM Local", "IA Generativa"],
     category: "Security & AI",
     github: "https://github.com/vrsebeatriz/CypherGuard-IA",
     image: "/images/cypherguard.jpg",
@@ -29,10 +29,10 @@ const projects = [
     image: "/images/jarlyne.png",
   },
   {
-    title: "TaskFlow Pro API",
-    description: "API RESTful desenvolvida em Node.js aplicando Clean Architecture e princípios SOLID. Utiliza injeção de dependência para desacoplar a lógica de negócio dos adaptadores de banco de dados e rotas web.",
-    tags: ["Node.js", "Java", "TypeScript", "PostgreSQL", "Docker", "Arquitetura Monorepo", "REST API"],
-    category: "Backend Engineering",
+    title: "TaskFlow Pro",
+    description: "TaskFlow Pro — Life OS Edition: ecossistema de produtividade que unifica tarefas, hábitos, treino, dieta e finanças em uma plataforma só, com análise financeira via Google Gemini AI. Monorepo com API REST em Node.js/Express, persistência em LowDB, frontend React + TypeScript com suporte PWA.",
+    tags: ["React", "Express.js", "Google Gemini API", "LowDB", "PWA", "TypeScript", "Node.js", "Arquitetura Monorepo"],
+    category: "Full-Stack · Life OS",
     github: "https://github.com/vrsebeatriz/TaskFlow",
     image: "/images/taskflow.jpg",
   }
