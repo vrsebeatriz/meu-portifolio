@@ -101,7 +101,7 @@ export default function Article({ params }: { params: { slug: string } }) {
              </button>
 
              {copied && (
-               <div className="absolute top-full mt-2 right-0 md:left-1/2 md:-translate-x-1/2 px-3 py-2 bg-[#1a2133] border border-white/10 rounded-lg shadow-xl z-50 pointer-events-none">
+               <div className="absolute top-full mt-2 right-0 md:left-1/2 md:-translate-x-1/2 px-3 py-2 bg-[#1a2133] border border-white/10 rounded-lg shadow-xl z-50 pointer-events-none w-max">
                  <span className="text-white text-xs font-bold whitespace-nowrap">Link copiado!</span>
                </div>
              )}
