@@ -91,24 +91,21 @@ export default function Article({ params }: { params: { slug: string } }) {
             <ArrowLeft className="w-4 h-4 transition-transform group-hover:-translate-x-1" />
             Voltar para a Estante
           </Link>
-          <div className="flex gap-4">
+          <div className="flex gap-4 relative">
              <button 
                onClick={handleShare}
-               className="text-muted hover:text-prime transition-colors relative group p-2 -mr-2 flex items-center justify-center focus:outline-none"
+               className="text-muted hover:text-prime transition-colors p-2 -mr-2 flex items-center justify-center focus:outline-none"
                title="Compartilhar artigo"
              >
                <Share2 className="w-5 h-5" />
-               {copied && (
-                 <motion.span 
-                   initial={{ opacity: 0, y: 5, scale: 0.95 }}
-                   animate={{ opacity: 1, y: 0, scale: 1 }}
-                   className="absolute top-full mt-2 right-0 md:left-1/2 md:-translate-x-1/2 px-3 py-2 bg-[#1a2133]/90 backdrop-blur-md text-white text-xs font-bold rounded-lg shadow-2xl whitespace-nowrap border border-white/10 z-50 flex items-center gap-1.5"
-                 >
-                   <CheckCircle className="w-4 h-4 text-prime shrink-0" />
-                   Link copiado!
-                 </motion.span>
-               )}
              </button>
+
+             {copied && (
+               <div className="absolute top-full mt-2 right-0 md:left-1/2 md:-translate-x-1/2 px-3 py-2 bg-[#1a2133] border border-white/10 rounded-lg shadow-xl z-50 flex items-center gap-2 pointer-events-none">
+                 <CheckCircle className="w-4 h-4 text-prime" />
+                 <span className="text-white text-xs font-bold whitespace-nowrap">Link copiado!</span>
+               </div>
+             )}
           </div>
         </div>
 
