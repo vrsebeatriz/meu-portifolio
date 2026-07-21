@@ -31,7 +31,7 @@ const projects = [
   {
     title: "TaskFlow Pro API",
     description: "API RESTful desenvolvida em Node.js aplicando Clean Architecture e princípios SOLID. Utiliza injeção de dependência para desacoplar a lógica de negócio dos adaptadores de banco de dados e rotas web.",
-    tags: ["Node.js", "Java", "TypeScript", "PostgreSQL", "Redis", "Docker", "Arquitetura Monorepo", "REST API"],
+    tags: ["Node.js", "Java", "TypeScript", "PostgreSQL", "Docker", "Arquitetura Monorepo", "REST API"],
     category: "Backend Engineering",
     github: "https://github.com/vrsebeatriz/TaskFlow",
     image: "/images/taskflow.jpg",
