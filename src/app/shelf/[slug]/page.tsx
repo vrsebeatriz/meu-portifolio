@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { ArrowLeft, Calendar, Clock, Share2, CheckCircle } from "lucide-react";
+import { ArrowLeft, Calendar, Clock, Share2 } from "lucide-react";
 import { notFound } from "next/navigation";
 
 const articles = {
@@ -101,8 +101,7 @@ export default function Article({ params }: { params: { slug: string } }) {
              </button>
 
              {copied && (
-               <div className="absolute top-full mt-2 right-0 md:left-1/2 md:-translate-x-1/2 px-3 py-2 bg-[#1a2133] border border-white/10 rounded-lg shadow-xl z-50 flex items-center gap-2 pointer-events-none">
-                 <CheckCircle className="w-4 h-4 text-prime" />
+               <div className="absolute top-full mt-2 right-0 md:left-1/2 md:-translate-x-1/2 px-3 py-2 bg-[#1a2133] border border-white/10 rounded-lg shadow-xl z-50 pointer-events-none">
                  <span className="text-white text-xs font-bold whitespace-nowrap">Link copiado!</span>
                </div>
              )}
