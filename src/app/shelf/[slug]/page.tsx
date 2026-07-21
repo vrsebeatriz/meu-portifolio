@@ -1,8 +1,9 @@
 "use client";
 
+import { useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { ArrowLeft, Calendar, Clock, Share2, MessageSquare } from "lucide-react";
+import { ArrowLeft, Calendar, Clock, Share2, Check } from "lucide-react";
 import { notFound } from "next/navigation";
 
 const articles = {
@@ -53,11 +54,28 @@ const articles = {
 };
 
 export default function Article({ params }: { params: { slug: string } }) {
+  const [copied, setCopied] = useState(false);
   const article = articles[params.slug as keyof typeof articles];
 
   if (!article) {
     notFound();
   }
+
+  const handleShare = async () => {
+    const url = typeof window !== "undefined" ? window.location.href : "";
+    
+    if (navigator.share) {
+      try {
+        await navigator.share({ title: article.title, url });
+      } catch (err) {
+        // usuário cancelou o share nativo, não é erro pra tratar
+      }
+    } else {
+      await navigator.clipboard.writeText(url);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    }
+  };
 
   return (
     <div className="min-h-screen selection:bg-prime/10 selection:text-prime">
@@ -74,8 +92,18 @@ export default function Article({ params }: { params: { slug: string } }) {
             Voltar para a Estante
           </Link>
           <div className="flex gap-4">
-             <button className="text-muted hover:text-prime transition-colors"><Share2 className="w-4 h-4" /></button>
-             <button className="text-muted hover:text-prime transition-colors"><MessageSquare className="w-4 h-4" /></button>
+             <button 
+               onClick={handleShare}
+               className="text-muted hover:text-prime transition-colors relative group"
+               title="Compartilhar artigo"
+             >
+               {copied ? <Check className="w-4 h-4 text-prime" /> : <Share2 className="w-4 h-4" />}
+               {copied && (
+                 <span className="absolute -bottom-8 right-0 md:-bottom-8 md:left-1/2 md:-translate-x-1/2 px-2 py-1 bg-charcoal text-prime text-[10px] font-bold rounded shadow-lg whitespace-nowrap border border-prime/20 z-50">
+                   Link copiado!
+                 </span>
+               )}
+             </button>
           </div>
         </div>
 
