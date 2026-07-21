@@ -224,7 +224,15 @@ export default function Home() {
           <div className="space-y-3">
              <span className="text-xs font-bold uppercase tracking-widest text-prime">Domínio</span>
              <div className="flex flex-wrap gap-2">
-               {["Deep Learning", "Cibersegurança", "APIs RESTful"].map((skill) => (
+               {["Deep Learning", "Cibersegurança"].map((skill) => (
+                 <span key={skill} className="px-3 py-1.5 bg-white/5 border border-white/10 rounded-full text-xs font-bold uppercase tracking-wider text-muted hover:border-prime/50 hover:text-prime hover:bg-prime/10 transition-colors cursor-default backdrop-blur-sm">{skill}</span>
+               ))}
+             </div>
+          </div>
+          <div className="space-y-3">
+             <span className="text-xs font-bold uppercase tracking-widest text-prime">Arquitetura</span>
+             <div className="flex flex-wrap gap-2">
+               {["APIs RESTful", "Clean Architecture"].map((skill) => (
                  <span key={skill} className="px-3 py-1.5 bg-white/5 border border-white/10 rounded-full text-xs font-bold uppercase tracking-wider text-muted hover:border-prime/50 hover:text-prime hover:bg-prime/10 transition-colors cursor-default backdrop-blur-sm">{skill}</span>
                ))}
              </div>
