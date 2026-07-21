@@ -6,7 +6,7 @@ import ProjectCard from "@/components/ProjectCard";
 const projects = [
   {
     title: "RoboNorte",
-    description: "Plataforma de e-commerce completa com Loja Virtual, Painel Administrativo e API Backend.",
+    description: "Plataforma de e-commerce implementando loja virtual e painel administrativo, com autenticação JWT e integração nativa com a API de pagamentos do Mercado Pago.",
     tags: ["Express 5", "TypeScript", "Supabase", "Mercado Pago", "JWT", "E-commerce"],
     category: "Full-Stack E-commerce",
     link: "https://www.robonorte.com.br/",
@@ -14,7 +14,7 @@ const projects = [
   },
   {
     title: "CypherGuard AI",
-    description: "Plataforma SAST de nível empresarial projetada para precisão cirúrgica e remediação autônoma usando LLMs locais.",
+    description: "Ferramenta SAST que normaliza árvores de sintaxe abstrata (AST) e utiliza modelos Llama 3 locais via Ollama para identificar e sugerir desofuscação semântica em scripts maliciosos polimórficos.",
     tags: ["Inteligência Artificial", "Deep Learning", "Cibersegurança", "Análise de Malware", "Desofuscação"],
     category: "Security & AI",
     github: "https://github.com/vrsebeatriz/CypherGuard-IA",
@@ -22,7 +22,7 @@ const projects = [
   },
   {
     title: "Jarlyne Martins | Studio",
-    description: "Identidade digital editorial para maquiadora especialista em pele negra. Foco em autoridade de marca, vitrine de luxo e conversão estratégica.",
+    description: "Aplicação institucional desenvolvida com foco em Mobile-First usando React e Tailwind CSS, incluindo integração direta com API do WhatsApp para orçamentos e agendamentos.",
     tags: ["React", "TypeScript", "UI/UX Design", "Front-end", "Mobile-First"],
     category: "Digital Identity",
     link: "https://jarlynemartins.space/",
@@ -30,8 +30,8 @@ const projects = [
   },
   {
     title: "TaskFlow Pro API",
-    description: "Arquitetura robusta de backend para gerenciamento de tarefas complexas, escalabilidade e performance.",
-    tags: ["Node.js", "Java", "TypeScript", "REST API", "Arquitetura Back-end"],
+    description: "API RESTful desenvolvida em Node.js aplicando Clean Architecture e princípios SOLID. Utiliza injeção de dependência para desacoplar a lógica de negócio dos adaptadores de banco de dados e rotas web.",
+    tags: ["Node.js", "Java", "TypeScript", "PostgreSQL", "Redis", "Docker", "Arquitetura Monorepo", "REST API"],
     category: "Backend Engineering",
     github: "https://github.com/vrsebeatriz/TaskFlow",
     image: "/images/taskflow.jpg",

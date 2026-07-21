@@ -10,11 +10,10 @@ import Footer from "@/components/Footer";
 import PageTransition from "@/components/PageTransition";
 import Preloader from "@/components/Preloader";
 import CustomCursor from "@/components/CustomCursor";
-import HeroCanvas from "@/components/HeroCanvas";
 import { Github, Linkedin, Mail } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Ana Beatriz | Software Engineer Student & Research",
+  title: "Ana Beatriz | Software Engineer Student & Researcher",
   description: "Portfolio de Ana Beatriz Araújo Silva, estudante de Ciência da Computação na UERN, desenvolvedora Full-Stack e pesquisadora em IA e Cibersegurança.",
   icons: {
     icon: "/favicon.png",
@@ -31,7 +30,6 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body className={`${inter.variable} ${outfit.variable} antialiased bg-[#0a0f1d] text-beige selection:bg-prime selection:text-white`}>
-          <HeroCanvas />
         <Preloader />
         <CustomCursor />
         {/* Sidebar Socials */}

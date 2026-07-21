@@ -71,9 +71,8 @@ const languages = [
 ];
 
 const events = [
-  { name: "GoRN 2025", type: "Congresso", desc: "Encontro da comunidade de tecnologia do Rio Grande do Norte." },
-  { name: "CSBC 2025", type: "Congresso", desc: "Maior evento de computação do Brasil, Maceió/AL." },
-  { name: "Elas São Tech", type: "Processo Seletivo", desc: "Participante ativa no processo seletivo do programa de aceleração de carreira para mulheres na tecnologia." },
+  { name: "GoRN 2025", type: "Ouvinte", desc: "Encontro da comunidade de tecnologia do Rio Grande do Norte." },
+  { name: "CSBC 2025", type: "Ouvinte", desc: "Maior evento de computação do Brasil, Maceió/AL." },
 ];
 
 const fadeUp = {
@@ -105,7 +104,7 @@ export default function Resume() {
             <Star className="w-3.5 h-3.5" /> Objetivo Profissional
           </h3>
           <p className="text-beige-dark text-sm leading-relaxed">
-            Estudante finalista de Ciência da Computação com sólida base no desenvolvimento Full Stack e forte vertente analítica em Inteligência Artificial e Cibersegurança. Procuro a minha primeira oportunidade como Engenheira de Software Júnior ou Desenvolvedora Júnior, onde possa aplicar conhecimentos práticos de programação (React Native, Node.js, Java, Python, Ruby, PHP) e o rigor científico da pesquisa para construir sistemas seguros, escaláveis e de alto impacto.
+            Estudante finalista de Ciência da Computação com sólida base no desenvolvimento Full Stack e forte vertente analítica em Inteligência Artificial e Cibersegurança. Procuro a minha primeira oportunidade como Engenheira de Software Júnior ou Desenvolvedora Júnior, onde possa aplicar conhecimentos práticos de programação (React Native, Node.js, Java, Python) e o rigor científico da pesquisa para construir sistemas seguros, escaláveis e de alto impacto.
           </p>
         </motion.div>
       </header>

@@ -75,6 +75,9 @@ export default function Home() {
             <Link href="/resume" className="flex items-center gap-2 text-sm font-bold text-beige hover:text-prime transition-colors border border-white/10 bg-white/5 hover:bg-white/10 px-5 py-3 rounded-full hover:border-prime/50 backdrop-blur-sm">
               Currículo
             </Link>
+            <Link href="/shelf" className="flex items-center gap-2 text-sm font-bold text-beige hover:text-prime transition-colors border border-white/10 bg-white/5 hover:bg-white/10 px-5 py-3 rounded-full hover:border-prime/50 backdrop-blur-sm">
+              Artigos Técnicos
+            </Link>
           </motion.div>
 
           <motion.div
@@ -175,7 +178,7 @@ export default function Home() {
               Sou estudante do último período de Ciência da Computação pela Universidade do Estado do Rio Grande do Norte (UERN) e construo softwares que equilibram design focado no usuário e engenharia de alta performance.
             </p>
             <p>
-              Minha atuação transita entre a pesquisa acadêmica e o desenvolvimento de mercado. Sou pesquisadora ativa nas áreas de Inteligência Artificial e Cibersegurança, com foco em desofuscação de código, análise de malware e modelos preditivos.
+              Na UERN (PIBIC), desenvolvo pesquisa em Informática em Saúde, estruturando ontologias (OWL) e processamento de linguagem natural para um chatbot de apoio ao diagnóstico de autismo.
             </p>
           </motion.div>
           <motion.div
@@ -186,10 +189,10 @@ export default function Home() {
             className="space-y-6"
           >
             <p>
-              Essa base profundamente analítica me permite desenvolver aplicações não apenas visuais, mas arquiteturalmente seguras e otimizadas.
+              De forma independente, atuo em Cibersegurança construindo ferramentas como o CypherGuard AI e escrevendo artigos técnicos sobre análise de malware e desofuscação de código com LLMs locais.
             </p>
             <p>
-              Com base em Mossoró, RN, meu foco atual é a criação de aplicações de ponta a ponta — seja arquitetando o fluxo de dados de uma API robusta, desenvolvendo ferramentas de segurança ou entregando sites de alta conversão.
+              Com base em Mossoró, RN, meu foco atual é a criação de aplicações de ponta a ponta — seja arquitetando o fluxo de dados de uma API robusta, desenvolvendo ferramentas de segurança ou entregando sites funcionais.
             </p>
           </motion.div>
         </div>
@@ -200,16 +203,32 @@ export default function Home() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.3 }}
-          className="flex flex-wrap gap-2 pt-4"
+          className="flex flex-col md:flex-row flex-wrap gap-8 pt-4"
         >
-          {["TypeScript", "React", "Next.js", "Node.js", "Java", "Python", "Deep Learning", "Cibersegurança"].map((skill) => (
-            <span
-              key={skill}
-              className="px-3 py-1.5 bg-white/5 border border-white/10 rounded-full text-xs font-bold uppercase tracking-wider text-muted hover:border-prime/50 hover:text-prime hover:bg-prime/10 transition-colors cursor-default backdrop-blur-sm"
-            >
-              {skill}
-            </span>
-          ))}
+          <div className="space-y-3">
+             <span className="text-xs font-bold uppercase tracking-widest text-prime">Linguagens</span>
+             <div className="flex flex-wrap gap-2">
+               {["TypeScript", "Java", "Python"].map((skill) => (
+                 <span key={skill} className="px-3 py-1.5 bg-white/5 border border-white/10 rounded-full text-xs font-bold uppercase tracking-wider text-muted hover:border-prime/50 hover:text-prime hover:bg-prime/10 transition-colors cursor-default backdrop-blur-sm">{skill}</span>
+               ))}
+             </div>
+          </div>
+          <div className="space-y-3">
+             <span className="text-xs font-bold uppercase tracking-widest text-prime">Frameworks & Ferramentas</span>
+             <div className="flex flex-wrap gap-2">
+               {["React", "Next.js", "Node.js"].map((skill) => (
+                 <span key={skill} className="px-3 py-1.5 bg-white/5 border border-white/10 rounded-full text-xs font-bold uppercase tracking-wider text-muted hover:border-prime/50 hover:text-prime hover:bg-prime/10 transition-colors cursor-default backdrop-blur-sm">{skill}</span>
+               ))}
+             </div>
+          </div>
+          <div className="space-y-3">
+             <span className="text-xs font-bold uppercase tracking-widest text-prime">Domínio</span>
+             <div className="flex flex-wrap gap-2">
+               {["Deep Learning", "Cibersegurança", "APIs RESTful"].map((skill) => (
+                 <span key={skill} className="px-3 py-1.5 bg-white/5 border border-white/10 rounded-full text-xs font-bold uppercase tracking-wider text-muted hover:border-prime/50 hover:text-prime hover:bg-prime/10 transition-colors cursor-default backdrop-blur-sm">{skill}</span>
+               ))}
+             </div>
+          </div>
         </motion.div>
       </section>
     </main>
