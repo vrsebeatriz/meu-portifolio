@@ -94,14 +94,19 @@ export default function Article({ params }: { params: { slug: string } }) {
           <div className="flex gap-4">
              <button 
                onClick={handleShare}
-               className="text-muted hover:text-prime transition-colors relative group"
+               className="text-muted hover:text-prime transition-colors relative group p-2 -mr-2 flex items-center justify-center"
                title="Compartilhar artigo"
              >
-               {copied ? <Check className="w-4 h-4 text-prime" /> : <Share2 className="w-4 h-4" />}
+               {copied ? <Check className="w-5 h-5 text-prime" /> : <Share2 className="w-5 h-5" />}
                {copied && (
-                 <span className="absolute -bottom-8 right-0 md:-bottom-8 md:left-1/2 md:-translate-x-1/2 px-2 py-1 bg-charcoal text-prime text-[10px] font-bold rounded shadow-lg whitespace-nowrap border border-prime/20 z-50">
+                 <motion.span 
+                   initial={{ opacity: 0, y: 5, scale: 0.95 }}
+                   animate={{ opacity: 1, y: 0, scale: 1 }}
+                   className="absolute top-full mt-2 right-0 md:left-1/2 md:-translate-x-1/2 px-3 py-2 bg-[#1a2133]/90 backdrop-blur-md text-white text-xs font-bold rounded-lg shadow-2xl whitespace-nowrap border border-white/10 z-50 flex items-center gap-2"
+                 >
+                   <span className="w-1.5 h-1.5 rounded-full bg-prime animate-pulse" />
                    Link copiado!
-                 </span>
+                 </motion.span>
                )}
              </button>
           </div>
