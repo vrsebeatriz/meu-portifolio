@@ -6,8 +6,8 @@ import ProjectCard from "@/components/ProjectCard";
 const projects = [
   {
     title: "RoboNorte",
-    description: "Plataforma de e-commerce implementando loja virtual e painel administrativo, com autenticação JWT e integração nativa com a API de pagamentos do Mercado Pago.",
-    tags: ["Express 5", "TypeScript", "Supabase", "Mercado Pago", "JWT", "E-commerce"],
+    description: "E-commerce completo em três camadas: loja com checkout multi-etapa (Mercado Pago Payment Brick — PIX, boleto, cartão em até 12x) e autopreenchimento de endereço via ViaCEP; painel admin com dashboard de KPIs ao vivo, CRUD de produtos e cálculo de LTV por cliente; API REST em Express 5 + TypeScript sobre Supabase (PostgreSQL + RLS).",
+    tags: ["React", "Vite", "Supabase Auth", "Express 5", "TypeScript", "Supabase", "Mercado Pago", "JWT", "E-commerce"],
     category: "Full-Stack E-commerce",
     link: "https://www.robonorte.com.br/",
     image: "/images/robonorte.png",
@@ -22,9 +22,9 @@ const projects = [
   },
   {
     title: "Jarlyne Martins | Studio",
-    description: "Aplicação institucional desenvolvida com foco em Mobile-First usando React e Tailwind CSS, incluindo integração direta com API do WhatsApp para orçamentos e agendamentos.",
-    tags: ["React", "TypeScript", "UI/UX Design", "Front-end", "Mobile-First"],
-    category: "Digital Identity",
+    description: "Portfólio digital editorial em Next.js 15 (App Router) com sistema de design Noir & Gold autoral. Galeria dinâmica com metadata customizada, painel administrativo privado para upload/edição/exclusão de peças (Vercel Blob), e integração direta com WhatsApp para captação de cliente.",
+    tags: ["Next.js 15", "Vercel Blob", "UI/UX Design", "Mobile-First"],
+    category: "Full-Stack Digital Identity",
     link: "https://jarlynemartins.space/",
     image: "/images/jarlyne.png",
   },
