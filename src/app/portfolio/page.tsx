@@ -23,7 +23,7 @@ const projects = [
   {
     title: "Jarlyne Martins | Studio",
     description: "Portfólio digital editorial em Next.js 15 (App Router) com sistema de design Noir & Gold autoral. Galeria dinâmica com metadata customizada, painel administrativo privado para upload/edição/exclusão de peças (Vercel Blob), e integração direta com WhatsApp para captação de cliente.",
-    tags: ["Next.js 15", "Vercel Blob", "UI/UX Design", "Mobile-First"],
+    tags: ["Next.js 15", "TypeScript", "Vercel Blob", "UI/UX Design", "Mobile-First"],
     category: "Full-Stack Digital Identity",
     link: "https://jarlynemartins.space/",
     image: "/images/jarlyne.png",
