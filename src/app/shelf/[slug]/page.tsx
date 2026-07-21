@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { ArrowLeft, Calendar, Clock, Share2, Check } from "lucide-react";
+import { ArrowLeft, Calendar, Clock, Share2, CheckCircle } from "lucide-react";
 import { notFound } from "next/navigation";
 
 const articles = {
@@ -94,7 +94,7 @@ export default function Article({ params }: { params: { slug: string } }) {
           <div className="flex gap-4">
              <button 
                onClick={handleShare}
-               className="text-muted hover:text-prime transition-colors relative group p-2 -mr-2 flex items-center justify-center"
+               className="text-muted hover:text-prime transition-colors relative group p-2 -mr-2 flex items-center justify-center focus:outline-none"
                title="Compartilhar artigo"
              >
                <Share2 className="w-5 h-5" />
@@ -104,7 +104,7 @@ export default function Article({ params }: { params: { slug: string } }) {
                    animate={{ opacity: 1, y: 0, scale: 1 }}
                    className="absolute top-full mt-2 right-0 md:left-1/2 md:-translate-x-1/2 px-3 py-2 bg-[#1a2133]/90 backdrop-blur-md text-white text-xs font-bold rounded-lg shadow-2xl whitespace-nowrap border border-white/10 z-50 flex items-center gap-1.5"
                  >
-                   <Check className="w-3.5 h-3.5 text-prime" />
+                   <CheckCircle className="w-4 h-4 text-prime shrink-0" />
                    Link copiado!
                  </motion.span>
                )}
